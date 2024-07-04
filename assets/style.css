@@ -16,6 +16,17 @@ h1 {
     background-color: var(--dark);
 }
 
+img {
+    display: block;
+    max-width: 400px;
+    max-height: 500px;
+    width: 50%;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 25px;
+}
+
 h2 {
     width: 20%;
     color: var(--dark);
@@ -46,21 +57,22 @@ header div {
     background-color: var(--dark);
 }
 
-header div p {
+header div a {
     padding: 5px;
     border: 1px white solid;
     border-radius: 5px;
     margin: 5px;
     color: white;
     background-color: var(--dark);
+    text-decoration: none;
 }
 
-header div p:hover {
+header div a:hover {
     background-color: white;
     color: black;
 }
 
-header div p:active {
+header div a:active {
     border: 1px black solid;
 }
 
@@ -93,7 +105,7 @@ header div p:active {
     justify-content: center;
 }
 
-.projects object {
+.projects a {
     width: 45%;
     text-align: center;
     margin: 0 auto;
@@ -102,23 +114,40 @@ header div p:active {
     border: var(--dark) 2px solid;
     border-radius: 10px;
     background-color: var(--medium);
+    text-decoration: none;
 }
 
-.projects object img {
+.projects a object img {
     max-width: 100%;
     max-height: 300px;
+    border: 1px black solid;
 }
 
 .projects object h3 {
     background-color: var(--medium);
     color: white;
     padding-top: 10px;
+    text-decoration: none;
 }
 
 .projects object p {
     background-color: var(--medium);
     color: white;
     padding-bottom: 10px;
+    border-radius: 10px;
+    text-decoration: none;
+}
+
+.projects a:hover {
+    position: relative;
+    bottom: 10px;
+    right: 10px;
+    box-shadow: 10px 10px black;
+}
+
+.projects a:active {
+    position: inherit;
+    box-shadow: none;
 }
 
 /* For first project displayed in work section */
@@ -130,6 +159,7 @@ header div p:active {
     background-color: var(--medium);
     border-top: var(--dark);
     margin-top: 5px;
+    border-radius: 10px;
 }
 
 #first img {
@@ -144,9 +174,58 @@ header div p:active {
     margin-bottom: 20px;
 }
 
+.contact-me object {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.contact-me object a {
+    margin-left: 10px;
+    margin-right: 10px;
+    color: white;
+    border: var(--dark) 1px solid;
+    padding: 2px;
+    border-radius: 10px;
+    background-color: var(--medium);
+    text-decoration: none;
+}
+
+.contact-me object a:hover {
+    background-color: black;
+    color: white;
+}
+
+.contact-me object a:active {
+    border: var(--light) 1px solid;
+}
+
 /* Resume Section values */
 .resume {
     display: flex;
     margin-top: 20px;
     margin-bottom: 20px;
+}
+
+.resume p {
+    width: 80%;
+    text-align: center;
+}
+
+/* Footer values */
+
+footer {
+    width: 100%;
+    text-align: center;
+    margin-top: 50px;
+    background-color: var(--dark);
+    border: black 5px solid;
+}
+
+footer p {
+    background-color: var(--dark);
+    color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
