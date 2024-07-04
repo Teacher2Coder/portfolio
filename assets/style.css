@@ -1,9 +1,152 @@
 :root {
     --dark: #001764;
-    --medium: ;
-    --light: ;
+    --medium: #115dc3;
+    --light: #00e8ff;
 }
 
 * {
-    background-color: ;
+    background-color: var(--light);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+h1 {
+    color: white;
+    font-size: 300%;
+    margin: 10px 0 10px 20px;
+    background-color: var(--dark);
+}
+
+h2 {
+    width: 20%;
+    color: var(--dark);
+    font-size: 150%;
+    text-align: center;
+    border-right: 5px solid var(--dark);
+}
+
+/* All header values */
+header {
+    width: 100%;
+    border: black 5px solid;
+    background-color: var(--dark);
+}
+
+header p {
+    color: white;
+    background-color: var(--dark);
+    padding-right: 5px;
+    padding-bottom: 5px;
+    text-align: right;
+}
+
+header div {
+    display: flex;
+    justify-content: right;
+    margin-bottom: 10px;
+    background-color: var(--dark);
+}
+
+header div p {
+    padding: 5px;
+    border: 1px white solid;
+    border-radius: 5px;
+    margin: 5px;
+    color: white;
+    background-color: var(--dark);
+}
+
+header div p:hover {
+    background-color: white;
+    color: black;
+}
+
+header div p:active {
+    border: 1px black solid;
+}
+
+/* About Me Section values */
+.about-me {
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.about-me p {
+    width: 80%;
+    padding-left: 10px;
+}
+
+/* Work Section values */
+.work {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.projects {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 80%;
+    justify-content: center;
+}
+
+.projects object {
+    width: 45%;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    border: var(--dark) 2px solid;
+    border-radius: 10px;
+    background-color: var(--medium);
+}
+
+.projects object img {
+    max-width: 100%;
+    max-height: 300px;
+}
+
+.projects object h3 {
+    background-color: var(--medium);
+    color: white;
+    padding-top: 10px;
+}
+
+.projects object p {
+    background-color: var(--medium);
+    color: white;
+    padding-bottom: 10px;
+}
+
+/* For first project displayed in work section */
+#first {
+    width: 95%;
+}
+
+#first label {
+    background-color: var(--medium);
+    border-top: var(--dark);
+    margin-top: 5px;
+}
+
+#first img {
+    max-width: 100%;
+    max-height: 500px;
+}
+
+/* Contact Me Section values */
+.contact-me {
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* Resume Section values */
+.resume {
+    display: flex;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
