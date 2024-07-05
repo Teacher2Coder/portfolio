@@ -28,7 +28,7 @@ img {
 }
 
 h2 {
-    width: 20%;
+    width: 30%;
     color: var(--dark);
     font-size: 150%;
     text-align: center;
@@ -73,7 +73,7 @@ header div a:hover {
 }
 
 header div a:active {
-    border: 1px black solid;
+    border: 1px var(--dark) solid;
 }
 
 /* About Me Section values */
@@ -84,7 +84,7 @@ header div a:active {
 }
 
 .about-me p {
-    width: 80%;
+    width: 70%;
     padding-left: 10px;
 }
 
@@ -101,7 +101,7 @@ header div a:active {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    width: 80%;
+    width: 70%;
     justify-content: center;
 }
 
@@ -176,6 +176,8 @@ header div a:active {
 
 .contact-me object {
     display: flex;
+    justify-content: center;
+    width: 70%;
     flex-direction: row;
     align-items: center;
     margin: 0 auto;
@@ -209,12 +211,11 @@ header div a:active {
 }
 
 .resume p {
-    width: 80%;
+    width: 70%;
     text-align: center;
 }
 
 /* Footer values */
-
 footer {
     width: 100%;
     text-align: center;
