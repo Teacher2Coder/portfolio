@@ -1,9 +1,12 @@
+/* Custom values */
 :root {
     --dark: #001764;
     --medium: #115dc3;
     --light: #00e8ff;
 }
 
+
+/* For whole webpage */
 * {
     background-color: var(--light);
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -83,9 +86,16 @@ header div a:active {
     margin-bottom: 20px;
 }
 
-.about-me p {
+.text {
+    display: flex;
+    flex-direction: column;
     width: 70%;
     padding-left: 10px;
+}
+
+.text p {
+    padding-top: 10px;
+    padding-bottom: 10px;
 }
 
 /* Work Section values */
