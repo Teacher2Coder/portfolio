@@ -240,3 +240,18 @@ footer p {
     padding-top: 20px;
     padding-bottom: 20px;
 }
+
+@media screen and (max-width: 768px) {
+    .contact-me object {
+        flex-direction: column;
+    }
+    .contact-me object a {
+        margin-bottom: 10px;
+    }
+}
+
+@media screen and (max-width: 564px) {
+    .projects a {
+        width: 95%;
+    }
+}
